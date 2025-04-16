@@ -6,6 +6,6 @@ class WhatsUp extends BaseController
 {
     public function index(): string
     {
-        return view('home');
+        return view('whatsup');
     }
 }

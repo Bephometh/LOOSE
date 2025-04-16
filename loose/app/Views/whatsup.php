@@ -12,23 +12,23 @@
 
     <!-- STYLES -->
     <style>
-        header{
-            height:80vh;
+
+        body{
+            background-image: none;
+            background-color: rgba(82, 128, 180);
+        }
+
+        .container-fluid::before{
+            height:0;
         }
 
         a{
             font-family: "Basement Grosteque";
             color: white;
-            letter-spacing:0.5rem;
-            font-size: 2rem;
         }
 
-        .heroe{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: auto;
-            transform: translate(-50%, -50%);
+        .card{
+            border: 0px;
         }
 
         #loose-h1{
@@ -36,7 +36,7 @@
             letter-spacing: 2rem;
             color: white;
             -webkit-text-stroke: 2px black;
-            font-size: 4rem;
+            font-size: 2rem;
             text-align: center;
             padding-left: 4rem;
         }
@@ -49,8 +49,7 @@
         }
 
         #menu-cont{
-            padding-right: 30vw;
-            padding-left: 30vw;
+            padding:0;
         }
         .list-group-item{
             background-color: transparent;
@@ -58,36 +57,25 @@
 
         a:hover{
             text-decoration: none;
-            letter-spacing: 0;
-            transition: 1s;
             color: white;
         }
 
+        .static{
+            position:absolute;
+        }
 
-        @media screen and (max-height: 1000px) {
-            body{
-                height: 140vh;
-            }
+        .static:hover{
+            opacity: 0;
+        }
 
-            .container-fluid::before{
-                height: 140vh;
-            }
 
-            header{
-                height: 60vh;
-            }
-            
+        @media screen and (max-height: 1000px) {            
             #loose-h1{
                 letter-spacing: 1rem;
                 padding-left:2rem;
             }
             .massive-cont{
-                margin-top:40vh;
-            }
-
-            #menu-cont{
-                padding-right: 5vw;
-                padding-left: 5vw;
+                margin-top:10vh;
             }
 
         }
@@ -99,7 +87,7 @@
     <div class="container-fluid m-0 p-0">    
         <!-- HEADER: MENU + HEROE SECTION -->
         <header>
-            <div class="heroe row ">
+            <div class="heroe row m-0">
                 <div class="col-12 my-auto p-0">
                     <h1 id="loose-h1">LOOSE</h1>
                 </div>
@@ -111,8 +99,18 @@
             <div id="menu-cont" class="col-12 align-self-center"  data-aos="fade-up">
                 <div id="menu">            
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">
-                            <a class="text-center" href="<?= site_url('AboutUs') ?>">About Us</a>
+                        <li class="list-group-item text-center px-0">
+                            <a class="text-center" href="<?= site_url('') ?>">
+                                <div class="card">
+
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">WATAN</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text">Last updated 3 mins ago</p>
+                                    </div>
+                                    <img class="card-img img-fluid static" src="<?= site_url("/assets/img/whatsup/WATAN.jpg")?>" /> <img class="card-img img-fluid active" src="<?= site_url("/assets/img/whatsup/WATAN.gif")?>" />
+                                </div>
+                            </a>
                         </li>
                         <li class="list-group-item text-center">
                             <a class="text-center" href="<?= site_url('WhatsUp') ?>">What We've Been Up To</a>
