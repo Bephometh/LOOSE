@@ -1,0 +1,33 @@
+/* *{
+    border: 1px solid red;
+} */
+
+@font-face {
+    font-family: "Basement Grosteque";
+    src: url("../fonts/BasementGrotesque-Black_v1.202.otf");
+}
+
+a:hover{
+    text-decoration: none;
+    letter-spacing: 0;
+    transition: 1s;
+}
+
+body{
+    height: 100vh;
+    background-image: url("../img/DSCF3914.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-fluid::before{
+    background-color: rgba(82, 128, 180, 0.5);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
