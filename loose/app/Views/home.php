@@ -20,14 +20,6 @@
             font-size: 2rem;
         }
 
-        .heroe{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: auto;
-            transform: translate(-50%, -50%);
-        }
-
         .jumbotron{
             padding-top:33vh;
             background: none;

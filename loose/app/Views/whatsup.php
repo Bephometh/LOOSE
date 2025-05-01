@@ -80,16 +80,12 @@
     
 </head>
 <body>
-    <div class="container-fluid m-0 p-0">    
-        <!-- HEADER: MENU + HEROE SECTION -->
-        <header>
-            <div class="heroe row m-0">
-                <div class="col-12 my-auto p-0">
-                    <h1 id="loose-h1">LOOSE</h1>
-                </div>
-            </div>
-        </header>
+    <?= $this->include('templates/navbar.php') ?>
+    <!-- HEADER: MENU + HEROE SECTION -->
+    <header>
+    </header>
 
+    <div class="container-fluid m-0 p-0">    
         <!-- CONTENT -->
         <section class="massive-cont row justify-content-center">
             <div id="menu-cont" class="col-12 align-self-center"  data-aos="fade-up">

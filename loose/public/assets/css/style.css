@@ -31,3 +31,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
+.bg-blue-brand{
+    background-color: rgba(82, 128, 180);
+}
