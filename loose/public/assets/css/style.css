@@ -35,3 +35,7 @@ body{
 .bg-blue-brand{
     background-color: rgba(82, 128, 180);
 }
+
+.nav-link{
+    padding: 1rem 1rem !important;
+}

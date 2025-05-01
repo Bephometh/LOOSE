@@ -64,7 +64,6 @@
             opacity: 0;
         }
 
-
         @media screen and (max-height: 1000px) {            
             #loose-h1{
                 letter-spacing: 1rem;
