@@ -5,11 +5,7 @@
     <title>L O O S E</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="<?= base_url("assets/css/style.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/bootstrap/css/bootstrap.min.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/aos-master/dist/aos.css") ?>">
-
+    <?= $this->include('/templates/header.php') ?>
     <!-- STYLES -->
     <style>
 
@@ -35,7 +31,7 @@
             font-family: "Basement Grosteque";
             letter-spacing: 2rem;
             color: white;
-            -webkit-text-stroke: 2px black;
+            /* -webkit-text-stroke: 2px black; */
             font-size: 2rem;
             text-align: center;
             padding-left: 4rem;
