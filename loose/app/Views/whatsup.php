@@ -27,16 +27,6 @@
             border: 0px;
         }
 
-        #loose-h1{
-            font-family: "Basement Grosteque";
-            letter-spacing: 2rem;
-            color: white;
-            /* -webkit-text-stroke: 2px black; */
-            font-size: 2rem;
-            text-align: center;
-            padding-left: 4rem;
-        }
-
         .massive-cont{
             height: 20vh;
             width: 100%;
@@ -120,6 +110,7 @@
 
 <!-- SCRIPTS -->
 
+<?= view('templates/scripts.php') ?>
 <script src="<?= base_url("assets/lib/aos-master/dist/aos.js") ?>">
 </script>
 

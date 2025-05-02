@@ -1,16 +1,19 @@
 
 
-<div class="fixed-top row bg-blue-brand">
+<!-- <div class="fixed-top row bg-blue-brand"> -->
 
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="loose-brand" class="navbar-brand nav-header-item" href="<?= site_url("/") ?>">
+                    <!-- <h1 id="loose-h1" class="pt-3">LOOSE</h1> -->
+                    LOOSE
+                </a>
+                <button type="button" class="navbar-toggler nav-header-item" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             
-            <a class="navbar-brand" href="<?= site_url("/") ?>">
-                <h1 id="loose-h1" class="pt-3">LOOSE</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -24,4 +27,4 @@
         </div>
     </nav>
 
-</div>
+<!-- </div> -->
