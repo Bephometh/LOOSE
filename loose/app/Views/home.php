@@ -76,7 +76,7 @@
                 padding-left:2rem;
             }
             .massive-cont{
-                margin-top:40vh;
+                margin-top:30vh;
             }
 
             #menu-cont{
@@ -102,13 +102,13 @@
 
         <!-- CONTENT -->
         <section class="massive-cont row justify-content-center">
-            <div id="menu-cont" class="col-12 align-self-center"  data-aos="fade-up">
+            <div id="menu-cont" class="col-12 align-self-center" >
                 <div id="menu">            
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">
+                        <li class="list-group-item text-center"  data-aos="fade-left">
                             <a class="text-center" href="<?= site_url('AboutUs') ?>">About Us</a>
                         </li>
-                        <li class="list-group-item text-center">
+                        <li class="list-group-item text-center"  data-aos="fade-right">
                             <a class="text-center" href="<?= site_url('WhatsUp') ?>">What We've Been Up To</a>
                         </li>
                     </ul>

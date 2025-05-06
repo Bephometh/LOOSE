@@ -8,4 +8,8 @@ class WhatsUp extends BaseController
     {
         return view('whatsup');
     }
+
+    public function detail($slug){
+        
+    }
 }
