@@ -5,11 +5,8 @@
     <title>L O O S E</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="<?= base_url("assets/css/style.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/bootstrap/css/bootstrap.min.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/aos-master/dist/aos.css") ?>">
 
+    <?= $this->include('/templates/header.php') ?>
     <!-- STYLES -->
     <style>
         header{
@@ -23,19 +20,16 @@
             font-size: 2rem;
         }
 
-        .heroe{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: auto;
-            transform: translate(-50%, -50%);
+        .jumbotron{
+            padding-top:33vh;
+            background: none;
         }
 
         #loose-h1{
             font-family: "Basement Grosteque";
             letter-spacing: 2rem;
             color: white;
-            -webkit-text-stroke: 2px black;
+            /* -webkit-text-stroke: 2px black; */
             font-size: 4rem;
             text-align: center;
             padding-left: 4rem;
@@ -82,7 +76,7 @@
                 padding-left:2rem;
             }
             .massive-cont{
-                margin-top:40vh;
+                margin-top:30vh;
             }
 
             #menu-cont{
@@ -98,8 +92,8 @@
 <body>
     <div class="container-fluid m-0 p-0">    
         <!-- HEADER: MENU + HEROE SECTION -->
-        <header>
-            <div class="heroe row ">
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
                 <div class="col-12 my-auto p-0">
                     <h1 id="loose-h1">LOOSE</h1>
                 </div>
@@ -108,13 +102,13 @@
 
         <!-- CONTENT -->
         <section class="massive-cont row justify-content-center">
-            <div id="menu-cont" class="col-12 align-self-center"  data-aos="fade-up">
+            <div id="menu-cont" class="col-12 align-self-center" >
                 <div id="menu">            
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">
+                        <li class="list-group-item text-center"  data-aos="fade-left">
                             <a class="text-center" href="<?= site_url('AboutUs') ?>">About Us</a>
                         </li>
-                        <li class="list-group-item text-center">
+                        <li class="list-group-item text-center"  data-aos="fade-right">
                             <a class="text-center" href="<?= site_url('WhatsUp') ?>">What We've Been Up To</a>
                         </li>
                     </ul>

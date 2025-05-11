@@ -19,6 +19,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container-fluid::before{
@@ -30,4 +31,24 @@ body{
     display: block;
     height: 100%;
     width: 100%;
+}
+
+.bg-blue-brand{
+    background-color: rgba(82, 128, 180);
+}
+
+.nav-link{
+    padding: 1rem 1rem !important;
+}
+
+.nav-header-item{
+    font-size: 2rem !important;
+}
+
+
+#loose-brand{
+    font-family: "Basement Grosteque";
+    letter-spacing: 1rem;
+    color: white;
+    text-align: center;
 }

@@ -5,11 +5,7 @@
     <title>L O O S E</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="<?= base_url("assets/css/style.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/bootstrap/css/bootstrap.min.css") ?>">
-    <link rel="stylesheet" href="<?= base_url("assets/lib/aos-master/dist/aos.css") ?>">
-
+    <?= $this->include('/templates/header.php') ?>
     <!-- STYLES -->
     <style>
 
@@ -29,16 +25,6 @@
 
         .card{
             border: 0px;
-        }
-
-        #loose-h1{
-            font-family: "Basement Grosteque";
-            letter-spacing: 2rem;
-            color: white;
-            -webkit-text-stroke: 2px black;
-            font-size: 2rem;
-            text-align: center;
-            padding-left: 4rem;
         }
 
         .massive-cont{
@@ -68,7 +54,6 @@
             opacity: 0;
         }
 
-
         @media screen and (max-height: 1000px) {            
             #loose-h1{
                 letter-spacing: 1rem;
@@ -84,16 +69,12 @@
     
 </head>
 <body>
-    <div class="container-fluid m-0 p-0">    
-        <!-- HEADER: MENU + HEROE SECTION -->
-        <header>
-            <div class="heroe row m-0">
-                <div class="col-12 my-auto p-0">
-                    <h1 id="loose-h1">LOOSE</h1>
-                </div>
-            </div>
-        </header>
+    <?= $this->include('templates/navbar.php') ?>
+    <!-- HEADER: MENU + HEROE SECTION -->
+    <header>
+    </header>
 
+    <div class="container-fluid m-0 p-0">    
         <!-- CONTENT -->
         <section class="massive-cont row justify-content-center">
             <div id="menu-cont" class="col-12 align-self-center"  data-aos="fade-up">
@@ -129,6 +110,7 @@
 
 <!-- SCRIPTS -->
 
+<?= view('templates/scripts.php') ?>
 <script src="<?= base_url("assets/lib/aos-master/dist/aos.js") ?>">
 </script>
 
